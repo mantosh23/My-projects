@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    background-color: #0F1111;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.block{
+    border: 1.5px solid transparent;
+}
+
+.block:hover{
+    border: 1.5px solid white;
+}
+
+.logo{
+    background-image: url(logo.png.png);
+    height: 50px;
+    width: 113px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.add-first{
+    font-size: 12px;
+    color: #CCCCCC;
+    margin-left: 28px;
+}
+
+.nav_add_2{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.add-sec{
+    
+    font-size: 14px;
+    color: white;
+    margin-left: 2px;
+}
+
+.search_pannel{
+    width: auto;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+
+.search_pannel:hover{
+    border: 1.5px solid yellow;
+}
+.search_pannel input{
+    outline: none;
+    padding-left: 10px;
+    width: 450px;
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.search_pannel select{
+    width: 51.6px;
+    border: none;
+    background-color: #f3f3f3;
+    text-align: center;
+    display: block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.search_pannel button{
+    width: 45px;
+    background-color: orange;
+    font-size: 15px;
+    border-style: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box{
+    color: white;
+    font-size: 12px;
+}
+
+.box p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cart{
+    color: white;
+    font-size: 25px;
+}
+
+.nav2{
+    background-color: #232F3E;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    width: auto;
+    height: 40px;
+    
+}
+
+.menu{
+    display: flex;
+    margin-left: 0px;
+}
+.menu p{
+    margin-left: 5px;
+}
+
+.items{
+    width: 80%;
+    display: flex;
+}
+.items p{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.item_2{
+    padding-left: 0;
+    margin-right: 0px;
+}
+
+.content{
+    background-color: #E3E6E6;
+}
+.hero_bar{
+    background-image: url(hero_image.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.itembox{
+    width: 300px;
+    height: 385px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 25px;
+}
+
+#msgbox{
+    width: 94%;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.itembox a{
+    font-size: 0.8rem;
+    margin-left: 23px;
+}
+
+.itembox a:hover{
+    color: orangered;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 250px;
+    height: 300px;
+    margin-top: 11px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foot1{
+    background-color: #232F3E;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E3E6E6;
+}
+
+.foot2{
+    background-color: #333333;
+    width: auto;
+    height: 400px;
+    color: white;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot2 a{
+    color: #E3E6E6;
+    font-weight: normal;
+}
+
+.foot2 p{
+    margin-top: 15px;
+}
+
+.foot3{
+    background-color: #333333;
+    border-top: 0.5px solid white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(logo.png.png);
+    height: 50px;
+    width: 113px;
+    background-repeat: no-repeat;
+}
