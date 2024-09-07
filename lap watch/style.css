@@ -1,0 +1,85 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  width: 30%;
+  border-radius: 1rem;
+}
+.display-time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw;
+  font-size: 2.5rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  height: 5rem;
+  margin: 4vw;
+  border-radius: 1rem;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2vw;
+}
+.buttons button{
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.buttons button:hover{
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.buttons button:first-child{
+  background-color: greenyellow;
+}
+.buttons button:last-child{
+  background-color: yellow;
+}
+.buttons button:nth-last-child(2){
+  background-color: crimson;
+  color: #fff;
+}
+
+.lap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3vw;
+}
+
+.laps{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+@media (max-width:500px) {
+  .container{
+    width: 90%;
+  }
+  .laps{
+    font-size: 5vw;
+  }
+}

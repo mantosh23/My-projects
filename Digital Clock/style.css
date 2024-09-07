@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+}
+
+.container{
+  position: absolute;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 600;
+  /* width: 400px; */
+  padding: 3rem 6rem;
+  background-color: #53cece;
+  /* height: 100px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 2.5rem;
+  opacity: 0.9;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+}
+
+.balls{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transition: 2s ease-in-out;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+  opacity: 0.8;
+}
+
+.ball-1{
+  transform: translate(calc(-113%),calc(-72%));
+}
+
+.ball-2{
+  transform: translate(calc(16%),calc(-28%));
+}

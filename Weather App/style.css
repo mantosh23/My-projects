@@ -1,0 +1,276 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+font-family: sans-serif;
+}
+ 
+html,body{
+width: 100%;
+height: 100%;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* linear-gradient(45deg,rgba(230,191,205,0.4),rgba(230,191,205,0.4) */
+  /* linear-gradient(45deg,rgba(184,37,179,0.4),rgba(184,37,179,0.4) */
+  /* background-color: linear-gradient(45deg ,rgba(188,231,142,0.4),rgba(188,231,142,0.4)); */
+  color: #fff;
+  /* overflow: hidden; */
+  transition: 2s ease-in-out;
+}
+
+.overlay{
+  width: 100%;
+  /* background-color: #1111117c; */
+  padding: 1.5vw;
+  border-radius: 1vw;
+
+}
+.container{
+  height: min-content;
+  width: 25vw;
+  background-color: #fff;
+  border-radius: 1vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.search-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+}
+
+.search-box input{
+  width: 84%;
+  text-transform: capitalize;
+  background-color: #e6f5fb;
+  outline: none;
+  border-radius: 1vw;
+  padding: 1vw 1.5vw;
+  font-size: 1vw;
+  font-weight: 600;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.25);
+}
+
+.search-box input::placeholder{
+  color: gray;
+}
+
+.search-box button{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #e6f5fb;
+  cursor: pointer;
+  font-size: 1vw;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.25);
+}
+
+.search-box button:hover{
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.weather-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 1.5vw;
+  display: none;
+}
+
+.weather-body img{
+  width: 60%;
+}
+
+.weather-box{
+  margin-block: 1.5vw;
+  text-align: center;
+}
+
+.weather-box .temp{
+  font-size: 3vw;
+  font-weight: 700;
+  position: relative;
+}
+
+.weather-box .temp sup{
+  font-size: 1.2vw;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .description{
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.weather-details{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2vw;
+  padding: 0 2vw;
+}
+.humidity,.wind{
+  display: flex;
+  align-items: center;
+}
+
+.weather-details i{
+  font-size: 2vw;
+}
+
+.weather-details .text{
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+.text span{
+  font-weight: 700;
+}
+
+.location-not-found{
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+.location-not-found img{
+  width: 80%;
+}
+
+.location-not-found h1{
+  font-size: 1.2vw;
+  color: #1f1f1f;
+  margin-block-end: 2vw;
+}
+
+.myBox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3vw;
+}
+.myBox p a{
+  text-decoration: none;
+  color: rgb(255, 100, 100);
+  font-weight: 600;
+  font-size: 1.75vw;
+}
+
+.myBox p{
+  font-size: 1.5vw;
+  color: #111;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+  gap: 2vw;
+}
+
+.details i{
+  font-size: 1.5vw;
+  color: #111;
+  cursor: pointer;
+}
+
+
+@media (max-width:550px) {
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .overlay{
+    height: 100vh;
+    width: 100%;
+  }
+  .search-box{
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 10vw;
+  }
+  .search-box input{
+    height: 8vw;
+    width: 70%;
+    font-size: 3.5vw;
+    border-radius: 33vw;
+    padding: 0px 4vw;
+  }
+  .search-box button{
+    height: 8vw;
+    width: 8vw;
+    font-size: 4vw;
+  }
+  .weather-body .temp{
+    font-size: 16vw;
+  }
+  .weather-body .temp sup{
+    font-size: 7vw;
+  }
+  .weather-body .description{
+    font-size: 5vw;
+  }
+  .humidity i{
+    font-size: 8vw;
+  }
+  #humidity,#wind-speed{
+    font-size: 3.5vw;
+  }
+  .text p{
+    font-size: 2.7vw;
+  }
+  .wind i{
+    font-size: 8vw;
+  }
+  .weather-details{
+    justify-content: space-around;
+    margin-top: 4vw;
+  }
+
+  .myBox p a{
+    font-size: 4vw;
+  }
+  .myBox p{
+    font-size: 3.7vw;
+  }
+
+  .details{
+    gap: 6vw;
+    margin-top: 18vw;
+  }
+  .details a i{
+    font-size: 5vw;
+  }
+  .weather-body img{
+    width: 42%;
+  }
+  .location-not-found h1{
+    font-size: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  .location-not-found img{
+    width: 60%;
+  }
+}
